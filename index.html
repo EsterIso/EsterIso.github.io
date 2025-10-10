@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="Header-Title">
+            Esterlin Jerez Paulino
+        </div>
+        
+        <nav>
+            <a class="nav-button" href="/index.html">home</a>
+            <a class="nav-button" href="/index.html">about-me</a>
+            <a class="nav-button" href="/index.html">projects</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="background">
+            <span class="ball"></span>
+            <span class="ball"></span>
+            <span class="ball"></span>
+            <span class="ball"></span>
+            <span class="ball"></span>
+            <span class="ball"></span>
+        </div>
+        <div class="section hero-section">
+            <img src="./images/hero-image.jpg" alt="">
+            <div >
+                <h1>Esterlin Jerez Paulino</h1>
+                <p>Full-Stack Developer</p>
+                <p>with a passion in testing</p>
+            </div>
+        </div>
+
+        <div class="section about-me">
+            <h1>About-Me</h1>
+            <div class="about-text">
+                <p>I'm a recent Computer Science graduate from New Jersey City University with a passion for building AI-powered web applications that solve real-world problems. 
+                    As a full-stack developer, I specialize in creating scalable solutions using modern technologies like React, Next.js, Django, and MongoDB. My experience ranges 
+                    from leading backend development during the Headstarter AI Fellowship—where I pitched TimeMesh and received a $1,000 investment offer—to mentoring aspiring developers 
+                    through CodePath. 
+                </p>
+                <p>Beyond development, I'm deeply passionate about Software Quality Assurance, ensuring every application I build meets the highest standards for clients, 
+                    users, and business requirements through rigorous testing and attention to detail. I thrive on transforming complex challenges into intuitive, reliable user experiences, 
+                    whether it's reducing study prep time by 60% with an AI study platform or building calendar apps that serve hundreds of users. When I'm not coding or testing, you'll find 
+                    me exploring the latest in AI integration and helping others break into tech.
+                </p>
+            </div>
+        </div>
+
+        <div class="section projects">
+            <h1>Projects</h1>
+            <div class="slideshow" id="slideshow" aria-roledescription="carousel">
+                <div class="slides" id="slides">
+                <!-- Slide 1 -->
+                <figure class="slide" data-index="0" data-active="true" aria-hidden="false">
+                    <img src="./images/ai-notes.png" alt="Calm lake at sunset">
+                    <figcaption class="caption">
+                    <h3>Study AI</h3>
+                    <p> An AI-powered study platform that transforms PDFs into interactive learning materials.</p>
+                    </figcaption>
+                </figure>
+
+                <!-- Slide 2 -->
+                <figure class="slide" data-index="1" data-active="false" aria-hidden="true">
+                    <img src="./images/timemesh.png" alt="Retro pixel art landscape">
+                    <figcaption class="caption">
+                    <h3>TimeMesh</h3>
+                    <p>A scalable web application supporting 400+ users with multiple calendar views and real-time functionality. Features AI-powered time management events and calendar import functionality.</p>
+                    </figcaption>
+                </figure>
+
+                <!-- Slide 3 -->
+                <figure class="slide" data-index="2" data-active="false" aria-hidden="true">
+                    <img src="https://picsum.photos/seed/3/1200/800" alt="Pixel capybara sitting on a hill">
+                    <figcaption class="caption">
+                    <h3>Unlock Achievements</h3>
+                    <p>Reach milestones and share your progress.</p>
+                    </figcaption>
+                </figure>
+                </div>
+
+                <!-- Controls -->
+                <button class="control prev" id="prev" aria-label="Previous slide">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg>
+                </button>
+                <button class="control next" id="next" aria-label="Next slide">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+                </button>
+
+                <!-- Dots -->
+                <div class="bottom-bar">
+                <div class="dots" id="dots" role="tablist" aria-label="Slide dots"></div>
+                </div>
+            </div>
+            
+        </div>
+        <script src="slideshow.js"></script>
+    </main>
+</body>
+</html>
