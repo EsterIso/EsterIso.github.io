@@ -14,8 +14,8 @@
         
         <nav>
             <a class="nav-button" href="/index.html">home</a>
-            <a class="nav-button" href="/index.html">about-me</a>
-            <a class="nav-button" href="/index.html">projects</a>
+            <a class="nav-button" href="/index.html#about-me">about-me</a>
+            <a class="nav-button" href="/index.html#projects">projects</a>
         </nav>
     </header>
 
@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        <div class="section about-me">
+        <div class="section about-me" id="about-me">
             <h1>About-Me</h1>
             <div class="about-text">
                 <p>I'm a recent Computer Science graduate from New Jersey City University with a passion for building AI-powered web applications that solve real-world problems. 
@@ -53,54 +53,34 @@
             </div>
         </div>
 
-        <div class="section projects">
+        <div class="section projects" id="projects">
             <h1>Projects</h1>
-            <div class="slideshow" id="slideshow" aria-roledescription="carousel">
-                <div class="slides" id="slides">
-                <!-- Slide 1 -->
-                <figure class="slide" data-index="0" data-active="true" aria-hidden="false">
-                    <img src="./images/ai-notes.png" alt="Calm lake at sunset">
-                    <figcaption class="caption">
-                    <h3>Study AI</h3>
-                    <p> An AI-powered study platform that transforms PDFs into interactive learning materials.</p>
-                    </figcaption>
-                </figure>
+            <div class="projects-grid">
+                <a href="./projects/notes-assistant.html" class="project-card">
+                    <img src="./images/ai-notes.png" alt="Notes Assistant">
+                    <div class="project-card-content">
+                        <h3>Notes Assistant</h3>
+                        <p>An AI-powered study platform that transforms PDFs into interactive learning materials.</p>
+                    </div>
+                </a>
 
-                <!-- Slide 2 -->
-                <figure class="slide" data-index="1" data-active="false" aria-hidden="true">
-                    <img src="./images/timemesh.png" alt="Retro pixel art landscape">
-                    <figcaption class="caption">
-                    <h3>TimeMesh</h3>
-                    <p>A scalable web application supporting 400+ users with multiple calendar views and real-time functionality. Features AI-powered time management events and calendar import functionality.</p>
-                    </figcaption>
-                </figure>
+                <a href="./timemesh.html" class="project-card">
+                    <img src="./images/timemesh.png" alt="TimeMesh">
+                    <div class="project-card-content">
+                        <h3>TimeMesh</h3>
+                        <p>A scalable web application supporting 400+ users with multiple calendar views and real-time functionality.</p>
+                    </div>
+                </a>
 
-                <!-- Slide 3 -->
-                <figure class="slide" data-index="2" data-active="false" aria-hidden="true">
-                    <img src="https://picsum.photos/seed/3/1200/800" alt="Pixel capybara sitting on a hill">
-                    <figcaption class="caption">
-                    <h3>Unlock Achievements</h3>
-                    <p>Reach milestones and share your progress.</p>
-                    </figcaption>
-                </figure>
-                </div>
-
-                <!-- Controls -->
-                <button class="control prev" id="prev" aria-label="Previous slide">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg>
-                </button>
-                <button class="control next" id="next" aria-label="Next slide">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
-                </button>
-
-                <!-- Dots -->
-                <div class="bottom-bar">
-                <div class="dots" id="dots" role="tablist" aria-label="Slide dots"></div>
-                </div>
+                <a href="./projects/coolcardsai.html" class="project-card">
+                    <img src="./images/coolcards.png" alt="CoolCardsAI">
+                    <div class="project-card-content">
+                        <h3>CoolCardsAI</h3>
+                        <p>A SaaS platform that generates personalized flashcards on any topic using OpenAI.</p>
+                    </div>
+                </a>
             </div>
-            
         </div>
-        <script src="slideshow.js"></script>
     </main>
 </body>
 </html>
