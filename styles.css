@@ -40,12 +40,13 @@ header {
 .nav-button {
   text-decoration: none;
   padding: 5px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
 }
 
 .nav-button:hover {
-  color: #B799FF;
   box-shadow: 0px 0px 20px #B799FF;
-  background-color: transparent !important;
+  background-color: #B799FF;
 }
 
 main {
