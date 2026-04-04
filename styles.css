@@ -91,7 +91,7 @@ a{
 }
 
 .header-contact a {
-  font: bolder 20px 'Trebuchet MS';
+  font: bolder 18px 'Trebuchet MS';
   color: #f4f4f4;
   text-decoration: none;
   background-color: #B698D0;
@@ -192,21 +192,42 @@ a{
 
 .skills {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 40px;
   padding: 40px;
 }
 
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
 .skill-card {
-  background-color: #DAB694;
+  background-color: #554176;
+  color: #f4f4f4;
   padding: 20px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.skill-card ul li {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-card i {
+  width: 24px;
+  font-size: 1.2em;
+  color: #DAB694;
 }
 
 .projects {
