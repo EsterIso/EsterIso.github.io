@@ -3,17 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="email.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-        <input type="submit" value="Submit">
-    </form>
+    <header>
+        <div class="header-title" onclick="window.location.href='/index.html'">
+            EJP
+        </div>
+        
+        <nav>
+            <a class="nav-button active" href="/index.html">home</a>
+            <a class="nav-button" href="/index.html#about-me">about-me</a>
+            <a class="nav-button" href="/index.html#skills">skills</a>
+            <a class="nav-button" href="/index.html#projects">projects</a>
+        </nav>
+
+        <div class="header-contact">
+            <a href="./reach-out/email.html">Reach Out</a>
+        </div>
+    </header>
+    <main>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <script src="email.js"></script>
 </body>
 </html>
