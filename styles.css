@@ -34,7 +34,7 @@ header {
 }
 
 .header-title {
-  font-size: 30px;
+  font-size:25px;
   font-weight: bold;
   width: 56px;
   height: 56px;
@@ -90,7 +90,7 @@ a{
   text-decoration: none;
 }
 
-.header-contact a {
+.header-contact {
   font: bolder 18px 'Trebuchet MS';
   color: #f4f4f4;
   text-decoration: none;
@@ -100,7 +100,7 @@ a{
   border: 2px solid #2A2537;
 }
 
-.header-contact a:hover {
+.header-contact:hover {
   background-color: #DAB694;
 }
 
@@ -121,6 +121,17 @@ a{
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+.hero-socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-socials a{
+  color: black;
+  font-size: 24px;
 }
 
 .hero-image {
@@ -258,4 +269,6 @@ a{
   flex-direction: column;
   justify-content: space-between;
 }
+
+
 
