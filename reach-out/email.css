@@ -18,7 +18,7 @@ body {
     min-height: 100%;
     overflow: hidden;
     margin: 0 auto;
-    padding-top: 90px;
+    
 }
 
 /* Header */
@@ -34,13 +34,6 @@ header {
     text-align: center;
     height: 40px;
     /* background:#232433; */
-}
-
-main {
-    height: calc(100vh - 120px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .header-title {
@@ -112,6 +105,30 @@ a{
 
 .header-contact a:hover {
     background-color: #DAB694;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+    /* background-image: url("../images/pattern.png"); */
+    background-color: #2A2537;
+    background-blend-mode: multiply;
+    color: #f4f4f4;
+
+}
+
+.contact-section {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #B698D0;
+    border-radius: 30px;
 }
 
 /* form */
