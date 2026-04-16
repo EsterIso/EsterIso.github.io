@@ -8,22 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="header-title" onclick="window.location.href='/index.html'">
-            EJP
-        </div>
-        
-        <nav>
-            <a class="nav-button active" href="/index.html">home</a>
-            <a class="nav-button" href="/index.html#about-me">about-me</a>
-            <a class="nav-button" href="/index.html#skills">skills</a>
-            <a class="nav-button" href="/index.html#projects">projects</a>
-        </nav>
-
-        <div class="header-contact">
-            <a href="./reach-out/email.html">Reach Out</a>
-        </div>
-    </header>
     <main>
         <div class="contact-section">
             <h1>Contact Me</h1>
@@ -31,15 +15,16 @@
         
             <form id="contact-form">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
+                <input type="text" id="name" name="name" placeholder="John Doe"><br><br>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
+                <input type="email" id="email" name="email" placeholder="JohnDoe@email.com"><br><br>
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
                 <input type="submit" value="Submit">
             </form>
         </div>
     </main>
+    <script src="../load-header.js"></script>
     <script src="email.js"></script>
 </body>
 </html>

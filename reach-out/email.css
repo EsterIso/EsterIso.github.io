@@ -1,3 +1,9 @@
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -28,16 +34,16 @@ header {
     left: 0;
     right: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px; 
+    padding: 20px;
     text-align: center;
     height: 40px;
     /* background:#232433; */
 }
 
 .header-title {
-    font-size: 30px;
+    font-size:25px;
     font-weight: bold;
     width: 56px;
     height: 56px;
@@ -51,7 +57,15 @@ header {
 }
 
 .header-title:hover {
-    cursor: pointer;
+  cursor: pointer;
+  content: "";
+  background-image: linear-gradient(
+    var(--rotate),
+    #dab694,
+    #b698d0
+  );
+  z-index: -1;
+  animation: spin 2.5s linear infinite;
 }
 
 header nav {
@@ -62,6 +76,7 @@ header nav {
     padding: 15px 20px;
     border-radius: 20px;
     border: 2px solid #2A2537;
+    margin: 0 auto;
 }
 
 .nav-button {
@@ -93,7 +108,7 @@ a{
     text-decoration: none;
 }
 
-.header-contact a {
+.header-contact {
     font: bolder 18px 'Trebuchet MS';
     color: #f4f4f4;
     text-decoration: none;
@@ -103,7 +118,7 @@ a{
     border: 2px solid #2A2537;
 }
 
-.header-contact a:hover {
+.header-contact:hover {
     background-color: #DAB694;
 }
 
@@ -113,22 +128,32 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 100px 20px 20px 20px;
     box-sizing: border-box;
     scroll-snap-align: start;
-    /* background-image: url("../images/pattern.png"); */
-    background-color: #2A2537;
-    background-blend-mode: multiply;
-    color: #f4f4f4;
-
+    background-color: #F9F8F8;
+    color: #333;
 }
 
 .contact-section {
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     max-width: 600px;
-    background-color: #B698D0;
+    background-color: #2A2537;
     border-radius: 30px;
+    color: #f4f4f4;
+}
+
+.contact-section h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #DAB694;
+}
+
+.contact-section p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #f4f4f4;
 }
 
 /* form */
@@ -136,5 +161,54 @@ form {
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    margin: 0 auto; 
+    margin: 0 auto;
+}
+
+form label {
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #f4f4f4;
+}
+
+input, textarea {
+    border-radius: 15px;
+    border: 1px solid rgba(218, 182, 148, 0.3);
+    padding: 12px 15px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f4f4f4;
+    transition: all 0.3s ease;
+}
+/* 
+input:required:valid {
+    background-color: rgba(255, 255, 255, 0.1);
+} */
+
+input::placeholder, textarea::placeholder {
+    color: rgba(244, 244, 244, 0.6);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: #DAB694;
+    box-shadow: 0 0 10px rgba(218, 182, 148, 0.3);
+}
+
+input[type="submit"] {
+    background-color: #B698D0;
+    color: #f4f4f4;
+    border: 2px solid #2A2537;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #DAB694;
+    transform: translateY(-2px);
 }
