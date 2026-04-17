@@ -39,7 +39,9 @@ header {
     padding: 20px;
     text-align: center;
     height: 40px;
-    /* background:#232433; */
+    z-index: 100;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .header-title {
@@ -140,8 +142,16 @@ main {
     padding: 40px;
     max-width: 600px;
     background-color: #2A2537;
-    border-radius: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(182, 152, 208, 0.2);
+    box-shadow: 0 10px 40px rgba(42, 37, 55, 0.3);
     color: #f4f4f4;
+    transition: all 0.3s ease;
+}
+
+.contact-section:hover {
+    box-shadow: 0 16px 48px rgba(182, 152, 208, 0.15);
+    border-color: rgba(182, 152, 208, 0.4);
 }
 
 .contact-section h1 {

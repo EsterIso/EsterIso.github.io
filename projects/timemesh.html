@@ -7,30 +7,10 @@
     <title>TimeMesh - Project</title>
 </head>
 <body>
-    <header>
-        <div class="Header-Title">
-            Esterlin Jerez Paulino
-        </div>
-        
-        <nav>
-            <a class="nav-button" href="/index.html">home</a>
-            <a class="nav-button" href="/index.html#about-me">about-me</a>
-            <a class="nav-button" href="/index.html#projects">projects</a>
-        </nav>
-    </header>
-
     <main class="main-content">
-        <div class="background">
-            <span class="ball"></span>
-            <span class="ball"></span>
-            <span class="ball"></span>
-            <span class="ball"></span>
-            <span class="ball"></span>
-            <span class="ball"></span>
-        </div>
-
-        <div class="project-container">
-            <div class="project-header">
+        
+        <div class="project-header section">
+            <div class="project-header-content">
                 <h1>TimeMesh</h1>
                 <p class="project-tagline">Multi-calendar sharing web app simplifying scheduling and event management</p>
                 
@@ -56,39 +36,44 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
+        </div>
 
-            <div class="project-content">
-                <section class="project-section">
-                    <h2>Overview</h2>
-                    <p>A scalable web application supporting 500+ active users with multiple calendar views, improving event tracking and scheduling efficiency. TimeMesh was selected in the top 3 out of 60,000 engineers in the Headstarter Fellowship 2024.</p>
-                </section>
+        
+        <div class="project-overview section">
+            <section class="project-section">
+                <h2>Overview</h2>
+                <p>A scalable web application supporting 500+ active users with multiple calendar views, improving event tracking and scheduling efficiency. TimeMesh was selected in the top 3 out of 60,000 engineers in the Headstarter Fellowship 2024.</p>
+            </section>
 
-                <section class="project-section">
-                    <h2>Key Features</h2>
-                    <div class="features-grid">
-                        <div class="feature-card">
-                            <h3>Unified Calendar Management</h3>
-                            <p>Track work, study, and personal schedules with clear separation between calendar types</p>
-                        </div>
-                        <div class="feature-card">
-                            <h3>Real-Time Updates</h3>
-                            <p>Instant notifications and updates on events with optimized RESTful API</p>
-                        </div>
-                        <div class="feature-card">
-                            <h3>AI-Powered Scheduling</h3>
-                            <p>Chrony AI integration for personalized time management event creation</p>
-                        </div>
-                        <div class="feature-card">
-                            <h3>Calendar Import</h3>
-                            <p>ICS format support increasing interoperability with external platforms by 25%</p>
-                        </div>
+            <section class="project-section">
+                <h2>Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Unified Calendar Management</h3>
+                        <p>Track work, study, and personal schedules with clear separation between calendar types</p>
                     </div>
-                </section>
+                    <div class="feature-card">
+                        <h3>Real-Time Updates</h3>
+                        <p>Instant notifications and updates on events with optimized RESTful API</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>AI-Powered Scheduling</h3>
+                        <p>Chrony AI integration for personalized time management event creation</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Calendar Import</h3>
+                        <p>ICS format support increasing interoperability with external platforms by 25%</p>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-                <section class="project-section">
-                    <h2>Tech Stack</h2>
-                    <div class="tech-stack">
-                        <span class="tech-badge">React</span>
+        
+        <div class="project-tech section">
+            <section class="project-section">
+                <h2>Tech Stack</h2>
+                <div class="tech-stack">
+                    <span class="tech-badge">React</span>
                         <span class="tech-badge">Django</span>
                         <span class="tech-badge">PostgreSQL</span>
                         <span class="tech-badge">Tailwind CSS</span>
@@ -108,7 +93,12 @@
                         <li>Improved user productivity and engagement through AI-powered features</li>
                     </ul>
                 </section>
+            </div>
+        </div>
 
+        
+        <div class="section">
+            <div class="project-container">
                 <section class="project-section">
                     <h2>Results</h2>
                     <div class="stats-grid">
@@ -142,5 +132,6 @@
             </div>
         </div>
     </main>
+    <script src="../load-header.js"></script>
 </body>
 </html>

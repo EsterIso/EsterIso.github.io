@@ -7,33 +7,13 @@
     <title>Notes Assistant - Project</title>
 </head>
 <body>
-    <header>
-        <div class="Header-Title">
-            Esterlin Jerez Paulino
-        </div>
-        
-        <nav>
-            <a class="nav-button" href="/index.html">home</a>
-            <a class="nav-button" href="/index.html#about-me">about-me</a>
-            <a class="nav-button" href="/index.html#projects">projects</a>
-        </nav>
-    </header>
-
     <main class="main-content">
-        <div class="background">
-            <span class="ball"></span>
-            <span class="ball"></span>
-            <span class="ball"></span>
-            <span class="ball"></span>
-            <span class="ball"></span>
-            <span class="ball"></span>
-        </div>
-
-        <div class="project-container">
-            <div class="project-header">
+        
+        <div class="project-header section">
+            <div class="project-header-content">
                 <h1>Notes Assistant</h1>
                 <p class="project-tagline">AI-powered study platform that transforms PDFs into interactive learning materials</p>
-                
+
                 <div class="project-links">
                     <a href="https://github.com/EsterIso/AI-Notes-Assistant" class="btn btn-primary" target="_blank">
                         <svg viewBox="0 0 24 24" width="20" height="20">
@@ -56,60 +36,68 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
+        </div>
 
-            <div class="project-content">
-                <section class="project-section">
-                    <h2>Overview</h2>
-                    <p>An AI-powered study platform that transforms PDFs into interactive learning materials, reducing study preparation time by 60%. Built with a scalable MERN stack architecture supporting real-time AI processing.</p>
-                </section>
 
-                <section class="project-section">
-                    <h2>Key Features</h2>
-                    <div class="features-grid">
-                        <div class="feature-card">
-                            <h3>AI Document Analysis</h3>
-                            <p>Automatically generate summaries, flashcards, and quiz questions from PDFs</p>
-                        </div>
-                        <div class="feature-card">
-                            <h3>Real-Time Processing</h3>
-                            <p>Instant AI-powered content generation with OpenAI API integration</p>
-                        </div>
-                        <div class="feature-card">
-                            <h3>Secure Authentication</h3>
-                            <p>JWT-based authentication system for user security</p>
-                        </div>
-                        <div class="feature-card">
-                            <h3>Optimized Performance</h3>
-                            <p>40% faster data retrieval through efficient MongoDB indexing</p>
-                        </div>
+        <div class="project-overview section">
+            <section class="project-section">
+                <h2>Overview</h2>
+                <p>An AI-powered study platform that transforms PDFs into interactive learning materials, reducing study preparation time by 60%. Built with a scalable MERN stack architecture supporting real-time AI processing.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>AI Document Analysis</h3>
+                        <p>Automatically generate summaries, flashcards, and quiz questions from PDFs</p>
                     </div>
-                </section>
-
-                <section class="project-section">
-                    <h2>Tech Stack</h2>
-                    <div class="tech-stack">
-                        <span class="tech-badge">React</span>
-                        <span class="tech-badge">Vite</span>
-                        <span class="tech-badge">Node.js</span>
-                        <span class="tech-badge">Express</span>
-                        <span class="tech-badge">MongoDB</span>
-                        <span class="tech-badge">JWT</span>
-                        <span class="tech-badge">OpenAI API</span>
+                    <div class="feature-card">
+                        <h3>Real-Time Processing</h3>
+                        <p>Instant AI-powered content generation with OpenAI API integration</p>
                     </div>
-                </section>
+                    <div class="feature-card">
+                        <h3>Secure Authentication</h3>
+                        <p>JWT-based authentication system for user security</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Optimized Performance</h3>
+                        <p>40% faster data retrieval through efficient MongoDB indexing</p>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-                <section class="project-section">
-                    <h2>What I Built</h2>
-                    <ul>
-                        <li>Developed scalable MERN stack architecture with React/Vite frontend and Express.js backend</li>
-                        <li>Implemented JWT-based authentication system for secure user access</li>
-                        <li>Optimized MongoDB schemas achieving 40% faster data retrieval through efficient indexing</li>
-                        <li>Integrated OpenAI API for document analysis and content generation</li>
-                        <li>Built real-time AI processing system for generating summaries, flashcards, and quiz questions</li>
-                        <li>Created file processing pipeline to handle PDF uploads and extraction</li>
-                    </ul>
-                </section>
+        <div class="project-tech section">
+            <section class="project-section">
+                <h2>Tech Stack</h2>
+                <div class="tech-stack">
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Vite</span>
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">Express</span>
+                    <span class="tech-badge">MongoDB</span>
+                    <span class="tech-badge">JWT</span>
+                    <span class="tech-badge">OpenAI API</span>
+                </div>
+            </section>
 
+            <section class="project-section">
+                <h2>What I Built</h2>
+                <ul>
+                    <li>Developed scalable MERN stack architecture with React/Vite frontend and Express.js backend</li>
+                    <li>Implemented JWT-based authentication system for secure user access</li>
+                    <li>Optimized MongoDB schemas achieving 40% faster data retrieval through efficient indexing</li>
+                    <li>Integrated OpenAI API for document analysis and content generation</li>
+                    <li>Built real-time AI processing system for generating summaries, flashcards, and quiz questions</li>
+                    <li>Created file processing pipeline to handle PDF uploads and extraction</li>
+                </ul>
+            </section>
+        </div>
+
+        
+        <div class="section">
+            <div class="project-container">
                 <section class="project-section">
                     <h2>Results</h2>
                     <div class="stats-grid">
@@ -130,5 +118,6 @@
             </div>
         </div>
     </main>
+    <script src="../load-header.js"></script>
 </body>
 </html>

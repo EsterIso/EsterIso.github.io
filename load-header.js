@@ -1,7 +1,7 @@
 // Load header from external file
 async function loadHeader() {
     try {
-        const headerPath = window.location.pathname.includes('/reach-out/') 
+        const headerPath = (window.location.pathname.includes('/reach-out/') || window.location.pathname.includes('/projects/'))
             ? '../header.html' 
             : './header.html';
         
