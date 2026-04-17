@@ -2,7 +2,7 @@
     <div class="header-title" onclick="window.location.href='/index.html'">
         EJP
     </div>
-    
+
     <nav>
         <a class="nav-button active" href="/index.html">home</a>
         <a class="nav-button" href="/index.html#about-me">about-me</a>
@@ -10,7 +10,22 @@
         <a class="nav-button" href="/index.html#projects">projects</a>
     </nav>
 
-    
     <a class="header-contact" href="/reach-out/email.html">Contact</a>
-    
+
+    <button class="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 </header>
+
+<div class="sidebar-overlay"></div>
+
+<nav class="sidebar">
+    <button class="sidebar-close" aria-label="Close menu">✕</button>
+    <a class="sidebar-link" href="/index.html">Home</a>
+    <a class="sidebar-link" href="/index.html#about-me">About Me</a>
+    <a class="sidebar-link" href="/index.html#skills">Skills</a>
+    <a class="sidebar-link" href="/index.html#projects">Projects</a>
+    <a class="sidebar-link sidebar-contact-link" href="/reach-out/email.html">Contact</a>
+</nav>
